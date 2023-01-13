@@ -1,0 +1,38 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.photo-card {
+  border: 1px solid black;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-form {
+  background-color: #af89be;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:20px ;
+}
+
+.load-more {
+  width: 140px;
+  height: 40px;
+  margin: 40px auto;
+  background-color: #c6ea9f;
+  border-radius: 5px;
+}
