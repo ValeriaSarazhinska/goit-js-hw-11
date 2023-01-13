@@ -44,12 +44,15 @@ form.addEventListener('submit', async event => {
   loadMoreButton.style.display = 'none';
   page = 2;
   query = event.currentTarget.elements.searchQuery.value;
+
   const { hits } = await getPhotos(query);
+
   if (!hits.length) {
     return Notify.failure(
       'Sorry, there are no images matching your search query. Please try again.'
     );
   }
+
   gallery.innerHTML = '';
   gallery.insertAdjacentHTML('beforeend', createCardGalleryItems(hits));
   lightbox.refresh();
